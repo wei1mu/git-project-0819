@@ -1,0 +1,77 @@
+/* 設定背景與字體 */
+body {
+    /* 將背景顏色設置為透明 */
+    background-color: transparent; 
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    /* 移除 flex 置中設定 */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    /* 新增: 設定相對定位基準點 */
+    position: relative; 
+
+    /* 新增：設定 GIF 為背景 */
+    background-image: url('Miyabi_Stealing_Melon.gif'); /* <-- 請在這裡輸入您的 GIF 檔名或連結 */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+/* 名片卡片容器 */
+.card {
+    /* 將卡片背景設置為白色（不透明） */
+    background-color: #FFFFFF;
+    width: 350px;
+    border-radius: 15px;
+    /* 調整陰影顏色，使其在白色背景下更明顯 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+    /* 修改: 使用絕對定位將名片移至右下角 */
+    position: absolute;
+    bottom: 20px; /* 從 top 改為 bottom */
+    right: 20px;
+    /* 移除舊的 top 屬性 */
+    /* top: 20px; */
+}
+/* 其他樣式保持不變 */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.content {
+    padding: 30px 20px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #888;
+    background-color: #fafafa;
+}
+
+/* 超連結顏色 */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
